@@ -25,13 +25,8 @@ jobs:
         uses: actions/checkout@v4
 
       # with은 plugin 파라미터 입니다. (java 17버전 셋업)
-      - uses: actions/checkout@v2
-      - name: Set up Node.js 20
-        uses: actions/setup-node@v3
-        with:
-          node-version: '20'
       - name: java setup
-        uses: actions/setup-java@v3
+        uses: actions/setup-java@v2
         with:
           distribution: 'adopt' # See 'Supported distributions' for available options
           java-version: '17'
